@@ -134,6 +134,7 @@ int main() {
     ThreadArgs args[NUM_THREADS];
 
     // Argumentos para cada hilo
+    
     for (int i = 0; i < NUM_THREADS; i++) {
         args[i].hilonombre = (char *)malloc(20);
         sprintf(args[i].hilonombre, "Thread %d", i + 1);
